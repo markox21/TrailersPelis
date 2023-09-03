@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+        <title>Movie App</title>
+    </head>
+    
+    <body>
+        
+        <header>
+            <h2>Wikipelis</h2>
+            <form id="form">
+                <input type="text" placeholder="Search" id="search" class="search">
+            </form>
+        </header>
+        <div id="tags"></div>
+        <div id="myNav" class="overlay">
+            
+            <!-- Botón para cerrar la navegación superpuesta -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <!-- Resumenes -->
+            <div class="overlay-content" id="overlay-content"></div>
+            
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a>
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
+        
+    </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Página Anterior</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Página Siguiente</div>
+        
+    </div>
+    
+</body>
+
+    <script src="index.js"></script>
+</html>
